@@ -17,7 +17,7 @@ requireJsOptimizerConfig = merge(requireJsRuntimeConfig, {
     include: [
         'requireLib',
         'components/nav-bar/nav-bar',
-        'components/home-page/home',
+        'components/posts-page/post',
         'text!components/about-page/about.html'
     ],
     insertRequire: ['app/startup'],

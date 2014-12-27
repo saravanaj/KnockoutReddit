@@ -10,7 +10,8 @@ define(["knockout", "crossroads", "hasher"], function (ko, crossroads, hasher) {
 
     return new Router({
         routes: [
-            { url: '', params: { page: 'home-page' } },
+            { url: '', params: { page: 'posts-page' } },
+            // { url: '/r/:subreddit', params: { page: 'posts-page' } },
             { url: 'about', params: { page: 'about-page' } }
         ]
     });
