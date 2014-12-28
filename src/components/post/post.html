@@ -1,0 +1,15 @@
+﻿<div>
+    <a data-bind="attr: { href: url }, text: title"></a>
+    <span>(<a data-bind="attr: { href: '#/domain/' + domain }, text: domain"></a>)</span>
+</div>
+<div>
+    <span data-bind="text: score + ' points'">
+    </span>
+    by
+    <a data-bind="attr: { href: '#/user/' + author }, text: author"></a>
+    at
+    <a data-bind="attr: { href: '#/r/' + subreddit }, text: '/r/' + subreddit"></a>
+    |
+    <a data-bind="attr: { href: 'http://www.reddit.com' + permalink }, text: num_comments + ' comments'"></a>
+</div>
+<hr />

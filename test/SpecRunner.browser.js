@@ -1,7 +1,7 @@
 (function() {
   // Reference your test modules here
   var testModules = [
-    'components/home-page'
+    'components/posts-page'
   ];
 
   // After the 'jasmine-boot' module creates the Jasmine environment, load all test modules then run them

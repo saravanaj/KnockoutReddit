@@ -1,0 +1,22 @@
+<form class="form-inline" role="form">
+    <div class="form-group">
+        <label>Type: </label>
+        <select class="form-control input-sm" data-bind="options: postTypes,
+                       optionsText: 'name',
+                       optionsValue: 'value',
+                       value: postType"></select>
+    </div>
+    <div class="form-group">
+        <label>Path: </label>
+        <input type="text" class="form-control input-sm" data-bind="value: postPath">
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-primary input-sm" data-bind="click: loadPosts">Go</button>
+    </div>
+</form>
+<br />
+<div data-bind="visible: isLoading">Loading...</div>
+<div class="alert alert-danger" data-bind="visible: isError" role="alert">Something bad has happened.</div>
+<div data-bind="foreach: posts, visible: !isLoading()">
+    <post params="postData: $data"></post>
+</div>
